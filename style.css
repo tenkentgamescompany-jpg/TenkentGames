@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background: #0b0b0b;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== HEADER ===== */
+header {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #111, #1b1b1b);
+  animation: slideDown 1s ease-out;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.tagline {
+  color: #00bfff;
+  font-size: 18px;
+}
+
+/* ===== GAME SECTION ===== */
+.game {
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 500px;
+  border: 1px solid #222;
+  border-radius: 12px;
+  animation: slideUp 1.2s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.game:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,191,255,0.4);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 20px;
+  background: #111;
+  font-size: 14px;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #00bfff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
